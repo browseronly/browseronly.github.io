@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <title>Browser Only</title>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f0393916cca40d65c3b6053f2f50c930";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>        
+</head>
+
+<body>
+    <div id="tips" style="font-size:25px;text-align: center;line-height: 50px;"></div>
+    <script>
+        var url = document.location.toString();
+        var urlParmStr = url.slice(url.indexOf('=') + 1);
+        var ua = navigator.userAgent.toLowerCase();
+        var isQQ = ua.indexOf('qq') != -1;
+        var isWeixin = ua.indexOf('micromessenger') != -1;
+        var isAndroid = ua.indexOf('android') != -1;
+        var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
+
+        var notice_openBrowser = "<h2>请通过浏览器打开本页面。</h2>"
+
+        // 判断是否在微信或QQ中打开
+        if (isWeixin || isQQ) {
+            document.getElementById("tips").innerHTML = notice_openBrowser;
+        } else {
+            if (urlParmStr == url) {
+                urlParmStr = "https://browseronly.github.io";
+            }
+            console.log(urlParmStr);
+            location.href = urlParmStr;
+        }
+    </script>
+</body>
+
+</html>
