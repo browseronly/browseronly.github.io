@@ -1,46 +1,49 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Browser Only</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script type="text/javascript" src="//js.users.51.la/21863171.js"></script>
-		<script>
-			var _hmt = _hmt || [];
-			(function() {
-			  var hm = document.createElement("script");
-			  hm.src = "https://hm.baidu.com/hm.js?f0393916cca40d65c3b6053f2f50c930";
-			  var s = document.getElementsByTagName("script")[0]; 
-			  s.parentNode.insertBefore(hm, s);
-			})();
-		</script>			
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Browser Only</h1>
-				<p>在下方输入需要跳转的链接，即可生成仅能使用浏览器打开的链接。</p>
-			</header>
+<head>
+    <title>Browser Only</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="text/javascript" src="//js.users.51.la/21863171.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?f0393916cca40d65c3b6053f2f50c930";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
 
-		<!-- Signup Form -->
-			<form id="signup-form" method="post">
-				<input type="url" name="url" id="url" placeholder="需要跳转的网址" />
-				<input type="button" value="生成" onclick="build_url()"/>
-			</form>
-			<p id="b_url"></p>
+<body class="is-preload">
 
-			<script src="./assets/js/build_url.js"></script>
+    <!-- Header -->
+    <header id="header">
+        <h1>Browser Only</h1>
+        <p>在下方输入需要跳转的链接，即可生成仅能使用浏览器打开的链接。</p>
+    </header>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="copyright">
-					<li>&copy; Powered by <a href="https://browseronly.github.io" target="_blank">Browser Only</a></li>
-				</ul>
-			</footer>
+    <!-- Signup Form -->
+    <form id="signup-form" method="post">
+        <input type="url" name="url" id="url" placeholder="需要跳转的网址" />
+        <input type="button" value="生成" onclick="build_url()" />
+    </form>
+    <p id="b_url"></p>
 
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
-	</body>
+    <script src="./assets/js/build_url.js"></script>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>&copy; Powered by <a href="https://browseronly.github.io" target="_blank">Browser Only</a></li>
+        </ul>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
